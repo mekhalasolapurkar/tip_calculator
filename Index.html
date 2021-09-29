@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Tip Calculator</title>
+        <meta charset="UTF-8">
+        <link href= "Index.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id = "container">
+            <h1>Tip Calculator</h1>
+
+        <!--User Input for tip calculation-->
+            <div id = "user-input">
+                <form>
+                    <label for = "bill-amount" id = "bill-amount-label">Bill Amount :</label>
+                    <span>$ </span><input type = "number" name = "bill-amount" id = "bill-amount" placeholder="Enter the bill amount">
+
+                    <br>
+
+                    <label for = "quality">Service Quality :</label>
+                    <select name = "quality" id = "quality">
+                        <option value = "0" disabled selected hidden>-Choose the quality of Service-</option>
+                        <option value = "30">Outstanding!</option>
+                        <option value ="20">Really Good!</option>
+                        <option value="18">Great!</option>
+                        <option value="15">Good!</option>
+                        <option value="10">Bad</option>
+                        <option value = "5">Terrible</option>
+                    </select>
+
+                    <br>
+
+                    <label for="people" id = "people-label">Number of People at table :</label>
+                    <input type = "number" name = "people" id = "people" placeholder="Enter number of people">   
+                </form>
+
+                <button id = "calculate">Calculate!</button>
+
+            </div>
+
+        <!--Calulated Tip Display-->
+            <div id = "tip">
+                <div id = "tip-1">
+                    <p class = "total-tip">Total Tip : </p>
+                    <span>$</span><p class = "total-tip" id = "total-tip"></p>
+                </div>
+
+                <div id = "tip-2">
+                    <p class = "individual-tip">Tip per Person : </p>
+                    <span>$</span><p class = "individual-tip" id = "individual-tip"></p>
+                </div>               
+            </div>
+
+        </div>
+
+    </body>
+    <script src = "Index.js"></script>
+
+</html>
